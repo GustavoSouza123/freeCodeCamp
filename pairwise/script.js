@@ -5,19 +5,19 @@ function pairwise(arr, arg) {
     while(aux > 0) {
         console.log('inicio while')
         console.log('array: '+arr)
-        let initialLength = arr.length;
+        let initialLength = ids.length;
         if(arr.length == 0) {
             console.log('retornando');
             aux--;
             return 0;
         } else {
-            for(i = 0; i < initialLength-1; i++) {
-                for(j = 0; j < initialLength; j++) {
+            for(i = 0; i < arr.length-1; i++) {
+                for(j = 0; j < arr.length; j++) {
                     if(i != j) {
                         if(arr[i] + arr[j] == arg) {
                             ids.push(i, j);
-                            arr.splice(j, 1);
-                            arr.splice(i, 1);
+                            arr[i] = 999;
+                            arr[j] = 999;
                             console.log('push '+i+' e '+j);
                             console.log('arr modificado: '+arr);
                             console.log('arr ids: '+ids)
@@ -26,13 +26,12 @@ function pairwise(arr, arg) {
                         }
                     }
                 }
-                if(initialLength != arr.length) {
-                    console.log('initial length != arr.length');
+                if(initialLength != ids.length) {
+                    console.log('initial length != ids.length => modificação no arr ids');
                     break;
                 }
-                if(i == initialLength-2) {
+                if(i == arr.length-2) {
                     console.log('i == initial length - 2')
-                    aux--;
                 }
             }
             numIterations++;
