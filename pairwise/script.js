@@ -23,8 +23,6 @@ function pairwise(arr, arg) {
                 if(initialLength != ids.length) {
                     break;
                 }
-                if(i == arr.length-2) {
-                }
             }
             numIterations++;
             if(numIterations == 3) {
