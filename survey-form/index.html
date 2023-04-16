@@ -8,42 +8,46 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form method="post" action="" id="survey-form">
-        <label id="name-label">Name</label> <br>
-        <input type="text" id="name" placeholder="Enter your name" required /> <br><br>
-        <label id="email-label">Email</label> <br>
-        <input type="email" id="email" placeholder="Enter your Email" required /> <br><br>
-        <label id="number-label">Age (optional)</label> <br>
-        <input type="number" id="number" min="18" max="99" placeholder="Age" /> <br><br>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+        </header>
+        <form id="survey-form">
+            <label id="name-label" class="label">Name</label> <br>
+            <input type="text" id="name" class="input" placeholder="Enter your name" required /> <br><br>
+            <label id="email-label" class="label">Email</label> <br>
+            <input type="email" id="email" class="input" placeholder="Enter your Email" required /> <br><br>
+            <label id="number-label" class="label">Age (optional)</label> <br>
+            <input type="number" id="number" class="input" min="18" max="99" placeholder="Age" /> <br><br>
+            
+            <label class="label">Which option best descripes your current role?</label> <br>
+            <select id="dropdown">
+                <option id="student" value="student" name="current-role">Student</option>
+                <option id="learner" value="learner" name="current-role">Full time learner</option>
+                <option id="job" value="job" name="current-role">Full time job</option>
+                <option id="not-say" value="not-say" name="current-role">Prefer not to say</option>
+                <option id="other" value="other" name="current-role">Other</option>
+            </select> <br><br>
+            
+            <label class="label">Would you recommend freeCodeCamp to a friend?</label> <br>
+            <input type="radio" id="definitely" value="definitely" name="recommend" /> <label for="definitely">Definitely</label> <br>
+            <input type="radio" id="maybe" value="maybe" name="recommend" /> <label for="maybe">Maybe</label> <br>
+            <input type="radio" id="not-sure" value="not-sure" name="recommend" /> <label for="not-sure">Not sure</label> <br><br>
         
-        <label>Which option best descripes your current role?</label> <br>
-        <select id="dropdown">
-            <option id="student" value="student" name="current-role">Student</option>
-            <option id="learner" value="learner" name="current-role">Full time learner</option>
-            <option id="job" value="job" name="current-role">Full time job</option>
-            <option id="not-say" value="not-say" name="current-role">Prefer not to say</option>
-            <option id="other" value="other" name="current-role">Other</option>
-        </select> <br><br>
+            <label class="label">What would you like to see improved? (Check all that apply)</label> <br>
+            <input type="checkbox" id="back-end" value="back-end" name="see-improved" /> <label for="back-end">Back-end Projects</label> <br>
+            <input type="checkbox" id="front-end" value="front-end" name="see-improved" /> <label for="front-end">Front-end Projects</label> <br>
+            <input type="checkbox" id="challenges" value="challenges" name="see-improved" /> <label for="challenges">Challenges</label> <br>
+            <input type="checkbox" id="open-source" value="open-source" name="see-improved" /> <label for="open-source">Open Source Community</label> <br>
+            <input type="checkbox" id="wiki" value="wiki" name="see-improved" /> <label for="wiki">Wiki</label> <br>
+            <input type="checkbox" id="forum" value="forum" name="see-improved" /> <label for="forum">Forum</label> <br><br>
         
-        <label>Would you recommend freeCodeCamp to a friend?</label> <br>
-        <input type="radio" id="definitely" value="definitely" name="recommend" /> <label for="definitely">Definitely</label> <br>
-        <input type="radio" id="maybe" value="maybe" name="recommend" /> <label for="maybe">Maybe</label> <br>
-        <input type="radio" id="not-sure" value="not-sure" name="recommend" /> <label for="not-sure">Not sure</label> <br><br>
-    
-        <label>What would you like to see improved? (Check all that apply)</label> <br>
-        <input type="checkbox" id="back-end" value="back-end" name="see-improved" /> <label for="back-end">Back-end Projects</label> <br>
-        <input type="checkbox" id="front-end" value="front-end" name="see-improved" /> <label for="front-end">Front-end Projects</label> <br>
-        <input type="checkbox" id="challenges" value="challenges" name="see-improved" /> <label for="challenges">Challenges</label> <br>
-        <input type="checkbox" id="open-source" value="open-source" name="see-improved" /> <label for="open-source">Open Source Community</label> <br>
-        <input type="checkbox" id="wiki" value="wiki" name="see-improved" /> <label for="wiki">Wiki</label> <br>
-        <input type="checkbox" id="forum" value="forum" name="see-improved" /> <label for="forum">Forum</label> <br><br>
-    
-        <label for="comments">Any comments or suggestions?</label> <br>
-        <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea> <br><br>
-    
-        <button type="submit" id="submit">Submit</button>        
-    </form>
+            <label for="comments" class="label">Any comments or suggestions?</label> <br>
+            <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea> <br><br>
+        
+            <button type="submit" id="submit">Submit</button>        
+        </form>
+    </div>
 </body>
 </html>
