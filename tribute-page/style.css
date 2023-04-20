@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#main > div {
+    width: 100%;
+}
+
+
+.top {
+    display: flex;
+    height: 100vh;
+}
+
+.top > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos {
+    margin-top: -50px;
+    padding: 0 30px;
+}
+
+.infos #title {
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.infos #tribute-info {
+    text-align: center;
+}
+
+#img-div {
+    position: relative;
+    padding-right: 20px;
+}
+
+#img-div #image {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+.timeline {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.timeline #title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#topics {
+    width: 40%;
+    border-left: 5px solid #000;
+    padding: 50px 0;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+
+.content:last-child {
+    margin: 0;
+}
+
+.content .marker {
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: 4px solid #ccc;
+    border-radius: 50%;
+}
+
+.content .year {
+    font-size: 24px;
+    font-weight: 600;
+}
