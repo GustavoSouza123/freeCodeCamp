@@ -4,16 +4,11 @@ const cs = (e) => document.querySelectorAll(e);
 
 // efeito da imagem ao rolar a tela
 
-/*c('#image').style.opacity = '1';
-let lastY = window.scrollY;
+c('#image').style.opacity = .9
 document.addEventListener('scroll', () => {
-    if(window.scrollY > lastY) {
-        console.log('descendo')
-        c('#image').style.opacity -= 0.00016 * window.scrollY;
+    if(window.scrollY > 600) {
+        c('#image').style.opacity = .8;
     } else {
-        console.log('subindo')
-        c('#image').style.opacity += 0.00016 * window.scrollY;
+        c('#image').style.opacity = .9;
     }
-
-    lastY = window.scrollY;
-});*/
+});
