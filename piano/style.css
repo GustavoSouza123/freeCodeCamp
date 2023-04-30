@@ -3,6 +3,9 @@
 }
 
 .piano {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 80px auto;
     width: 900px;
     height: 300px;
@@ -15,3 +18,55 @@
     width: 200px;
 }
 
+.keys {
+    display: flex;
+    justify-content: space-around;
+    gap: 4px;
+    width: 100%;
+    height: 180px;
+    background-color: #040404;
+    padding: 2px 4px;
+    overflow: hidden;
+}
+
+.key {
+    background-color: #fff;
+    width: 40px;
+    height: 100%;
+    border-radius: 0 0 3px 3px;
+}
+
+.key.black-key::after {
+    content: "";
+    display: block;
+    background-color: #000;
+    position: relative;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+    border-radius: 0 0 3px 3px;
+}
+
+
+/*
+
+.key {
+  background-color: #ffffff;
+  position: relative;
+  width: 41px;
+  height: 175px;
+  margin: 2px;
+  float: left;
+  border-radius: 0 0 3px 3px;
+}
+
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+  border-radius: 0 0 3px 3px;
+}
+*/
