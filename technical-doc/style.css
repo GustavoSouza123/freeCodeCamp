@@ -1,3 +1,75 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+}
+
+/* NAVBAR */
+
+#navbar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 3px solid #ccc;
+    padding: 30px;
+}
+
+#navbar header {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#navbar ul {
+    width: 100%;
+    height: calc(100% - 60px);
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    overflow: auto;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid #aaa;
+}
+
+#navbar ul li a {
+    display: block;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+#main-doc {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    padding-left: calc(300px + 30px);
+    color: #333;
+}
+
+#main-doc p,
+#main-doc li {
+    font-size: 16px;
+}
+
+#main-doc header {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+#Introduction header {
+    margin: 0;
+}
