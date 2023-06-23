@@ -1,14 +1,15 @@
 * {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
     --white-bg: #f5fcff;
     --dark-bg: #10162f;
+    --blue: #3a10e5;
+    --yellow: #ffd300;
     --white-color: #ffffff;
     --black-color: #10162f;
-    --purple: #3a10e5;
-    --yellow: #ffd300;
 }
 
 body {
@@ -16,19 +17,6 @@ body {
     padding: 0;
 }
 
-/* main */
-
-main section {
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-}
-
-main section .content {
-    width: 70%;
-    height: 100%;
-}
 
 /* header */
 
@@ -40,6 +28,12 @@ main section .content {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: content-box;
+}
+
+.header-scroll {
+    background-color: var(--white-color) !important;
+    border-bottom: 1px solid var(--black-color);
 }
 
 #header-content {
@@ -84,7 +78,134 @@ main section .content {
 }
 
 #nav-bar ul li a:hover {
-    background-color: red;
+    color: var(--blue);
+}
+
+#header .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#header .search:hover {
+    background-color: #eee;
+}
+
+#header .search img {
+    height: 25px;
+}
+
+#header .btn {
+    font-weight: 500;
+    transition: .3s;
+}
+
+.login,
+.signup {
+    padding: 8px 15px 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: var(--blue);
+    color: var(--white-color);
+}
+
+.login:hover {
+    background-color: #eee;
+    color: var(--blue);
+}
+
+.signup:hover {
+    background-color: #3a10e5cc;
+}
+
+
+/* main */
+
+main {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main section .content {
+    width: 70%;
+    height: 100%;
+}
+
+
+/* sections */
+
+.light {
+    background-color: var(--white-bg);
+}
+
+.dark {
+    background-color: var(--dark-bg);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+/* section 1: codeacademy */
+#codeacademy {
+    height: 600px;
+}
+
+/* section 2: */
+#interactive {
+    height: 350px;
+}
+
+/* section 3: */
+#skills {
+    height: 500px;
+}
+
+/* section 4: */
+#grow {
+    height: 650px;
+}
+
+/* section 5: */
+#elevate {
+    height: 250px;
+}
+
+/* section 6: */
+#gaps {
+    height: 550px;
+}
+
+/* section 7: */
+#plan {
+    height: 500px;
+}
+
+/* section 8: */
+#resources {
+    height: 400px;
+}
+
+
+/* footer */
+
+#footer {
+    height: 650px;
+    background-color: var(--white-bg);
 }
 
 
