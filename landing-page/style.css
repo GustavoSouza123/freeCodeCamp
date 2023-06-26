@@ -45,7 +45,7 @@ body {
 }
 
 #header-img {
-    height: 30px;
+    height: 25px;
 }
 
 #nav-bar {
@@ -72,6 +72,7 @@ body {
 #nav-bar ul li a {
     color: var(--black-color);
     text-decoration: none;
+    font-weight: 500;
     height: 100%;
     display: flex;
     align-items: center;
@@ -141,7 +142,7 @@ main section {
 }
 
 main section .content {
-    width: 70%;
+    width: 80%;
     height: 100%;
 }
 
@@ -150,14 +151,17 @@ main section .content {
 
 .light {
     background-color: var(--white-bg);
+    color: var(--black-color);
 }
 
 .dark {
     background-color: var(--dark-bg);
+    color: var(--white-color);
 }
 
 .yellow {
     background-color: var(--yellow);
+    color: var(--black-color);
 }
 
 /* section 1: codeacademy */
@@ -165,9 +169,77 @@ main section .content {
     height: 600px;
 }
 
+#codeacademy .content {
+    display: flex;
+}
+
+#codeacademy .content .left,
+#codeacademy .content .right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+#codeacademy .left {
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#codeacademy .right {
+    align-items: center;
+    justify-content: center;
+}
+
+#codeacademy .main-img {
+    height: 470px;
+}
+
+#codeacademy .codeacademy {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#codeacademy .title {
+    font-size: 62px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#codeacademy .subtitle {
+    font-size: 18px;
+}
+
+#codeacademy .button {
+    width: 240px;
+    height: 50px;
+    background-color: var(--yellow);
+    color: var(--black-color);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-top: 20px;;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    box-shadow: -5px 5px 0px 0px var(--white-bg);
+    transition: .2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#codeacademy .button:hover {
+    box-shadow: -10px 10px 0px -0px var(--white-bg);
+}
+
 /* section 2: */
 #interactive {
     height: 350px;
+    border-bottom: 1px solid black;
 }
 
 /* section 3: */
