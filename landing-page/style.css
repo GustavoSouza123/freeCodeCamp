@@ -17,6 +17,10 @@ body {
     padding: 0;
 }
 
+h1, p {
+    margin: 0;
+}
+
 
 /* header */
 
@@ -144,6 +148,7 @@ main section {
 main section .content {
     width: 80%;
     height: 100%;
+    padding-top: 50px;
 }
 
 
@@ -164,6 +169,17 @@ main section .content {
     color: var(--black-color);
 }
 
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 30px;
+}
+
 /* section 1: codeacademy */
 #codeacademy {
     height: 600px;
@@ -182,7 +198,8 @@ main section .content {
 
 #codeacademy .left {
     flex-direction: column;
-    margin-top: 50px;
+    padding-right: 30px;
+    padding-top: 10px;
 }
 
 #codeacademy .right {
@@ -204,13 +221,13 @@ main section .content {
 }
 
 #codeacademy .title {
-    font-size: 62px;
+    font-size: 58px;
     font-weight: 700;
     margin: 0;
 }
 
 #codeacademy .subtitle {
-    font-size: 18px;
+    margin: 20px 0;
 }
 
 #codeacademy .button {
@@ -239,7 +256,27 @@ main section .content {
 /* section 2: */
 #interactive {
     height: 350px;
-    border-bottom: 1px solid black;
+}
+
+#interactive .content {
+    display: flex;
+}
+
+#interactive .left,
+#interactive .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#interactive .right {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#interactive .right img {
+    height: 280px;
 }
 
 /* section 3: */
@@ -247,9 +284,81 @@ main section .content {
     height: 500px;
 }
 
+#skills .content {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills .top {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+#skills .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 23%;
+    height: 100%;
+}
+
+.skill img {
+    height: 60px;
+}
+
+.skill-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.skill .text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
 /* section 4: */
 #grow {
     height: 650px;
+}
+
+#grow .title {
+    margin-bottom: 20px;
+}
+
+#grow .topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#grow .topic {
+    width: 30%;
+    margin-top: 30px;
+}
+
+#grow .topic img {
+    height: 60px;
+}
+
+#grow .topic .title {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#grow .topic .text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+#grow .topic a {
+    color: var(--yellow);
 }
 
 /* section 5: */
