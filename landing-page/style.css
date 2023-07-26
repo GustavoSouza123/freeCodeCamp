@@ -526,7 +526,7 @@ main section .content {
 #gaps .left {
     width: 70%;
     height: 100%;
-    padding-right: 20%;
+    padding-right: 10%;
 }
 
 #gaps .left ul li {
@@ -535,12 +535,21 @@ main section .content {
 }
 
 #gaps .right {
+    display: flex;
+    justify-content: flex-end;
     width: 30%;
     height: 100%;
 }
 
-#gaps .right img {
+#gaps .right a {
+    display: block;
     height: 430px;
+}
+
+#gaps .right img {
+    max-width: 100%;
+    height: auto;
+    max-height: 430px;
 }
 
 /* section 7: */
