@@ -24,6 +24,35 @@
     }
 }
 
+@media only screen and (max-width: 1050px) {
+    #plans .content {
+        flex-direction: column;
+    }
+
+    #plans .content > div {
+        width: 100% !important;
+    }
+
+    #plans .plan.teams {
+        margin: 30px 0;
+    }
+
+    #footer #top > div {
+        width: 30%;
+    }
+
+    #footer .part4 {
+        padding: 0;
+        border: 0;
+    }
+
+    #footer .part4,
+    #footer .part5,
+    #footer .part6 {
+        padding-top: 50px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #codeacademy {
         min-height: 400px;
@@ -102,6 +131,41 @@
 
     #elevate .right .button {
         width: 100%;
+    }
+
+    #gaps .content {
+        flex-direction: column-reverse;
+    }
+
+    #gaps .content > div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #gaps .left {
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    #gaps .right a {
+        height: 100%;
+    }
+
+    #gaps .right img {
+        max-height: 100%;
+    }
+
+    #resources .resources {
+        flex-direction: column;
+    }
+
+    #resources .resource {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #resources .resource:last-child {
+        margin-bottom: 10px;
     }
 }
 

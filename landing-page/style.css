@@ -290,7 +290,7 @@ main section .content {
 
 /* section 1: codeacademy */
 #codeacademy {
-    min-height: 600px;
+    min-height: 500px;
 }
 
 #codeacademy .content {
@@ -526,7 +526,7 @@ main section .content {
 
 /* section 6: */
 #gaps {
-    min-height: 550px;
+    min-height: 450px;
 }
 
 #gaps .content {
@@ -536,7 +536,7 @@ main section .content {
 #gaps .left {
     width: 70%;
     height: 100%;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 #gaps .left ul li {
@@ -553,7 +553,7 @@ main section .content {
 
 #gaps .right a {
     display: block;
-    height: 430px;
+    height: 400px;
 }
 
 #gaps .right img {
@@ -573,7 +573,7 @@ main section .content {
 }
 
 #plans .content .left {
-    width: 30%;
+    width: 25%;
 }
 
 #plans .title {
@@ -581,8 +581,8 @@ main section .content {
 }
 
 #plans .plan {
-    width: 400px;
-    height: 370px;
+    width: 35%;
+    min-height: 370px;
     background-color: #ffffff;
     padding: 50px 20px;
 }
@@ -679,16 +679,17 @@ main section .content {
 #resources .resources {
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    min-height: 200px;
 }
 
 #resources .resource {
     width: 23%;
+    margin-bottom: 10px;
 }
 
 #resources .resource .desc {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #resources .resource a {
@@ -700,14 +701,14 @@ main section .content {
 
 #footer {
     width: 100%;
-    height: 650px;
+    min-height: 650px;
     display: flex;
     justify-content: center;
     background-color: var(--white-bg);
 }
 
 #footer .content {
-    width: 80%;
+    width: 85%;
     height: 100%;
     padding-top: 50px;
 }
@@ -715,6 +716,7 @@ main section .content {
 #footer #top {
     height: calc(100% - 50px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 30px;
 }
