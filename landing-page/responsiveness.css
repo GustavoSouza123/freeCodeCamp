@@ -39,6 +39,7 @@
 
     #footer #top > div {
         width: 30%;
+        min-width: 150px;
     }
 
     #footer .part4 {
@@ -50,6 +51,23 @@
     #footer .part5,
     #footer .part6 {
         padding-top: 50px;
+    }
+
+    #footer .part2,
+    #footer .part5 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #footer #bottom {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #footer #bottom .left {
+        margin-bottom: 10px;
     }
 }
 
@@ -181,6 +199,10 @@
     #header .search {
         display: none;
     }
+
+    #gaps .left ul {
+        padding-left: 7.5%;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -196,5 +218,27 @@
     .login,
     .signup {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #footer #top {
+        justify-content: center;
+    }
+    
+    #footer #top > div {
+        width: 85%;
+        align-items: center;
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    #footer #top > div:first-child {
+        padding: 0;
+    }
+
+    #footer #top > div a,
+    #footer #top > div p {
+        text-align: center;
     }
 }

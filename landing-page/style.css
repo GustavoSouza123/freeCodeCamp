@@ -307,7 +307,7 @@ main section .content {
 #codeacademy .left {
     flex-direction: column;
     padding-right: 30px;
-    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 #codeacademy .right {
@@ -351,6 +351,7 @@ main section .content {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #codeacademy .button:hover {
@@ -776,7 +777,7 @@ main section .content {
 }
 
 #footer #bottom {
-    height: 50px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
