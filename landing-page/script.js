@@ -19,3 +19,11 @@ c('.menu-toggle').onclick = () => {
     }
     c('.menu-toggle').classList.toggle('active');
 }
+
+c('#footer .btn').onclick = () => {
+    if(c('.hidden').style.display == 'flex') {
+        c('.hidden').style.display = 'none';
+    } else {
+        c('.hidden').style.display = 'flex';
+    }
+}
