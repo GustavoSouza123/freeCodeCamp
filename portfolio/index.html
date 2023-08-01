@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+    <!-- css and script -->
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js" defer></script>
+    <!-- title -->
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <nav id="navbar">
+        <nav id="navbar" class="desktop">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="navbar" class="mobile">
             <ul>
                 <li><a href="#welcome-section">About</a></li>
                 <li><a href="#projects">Work</a></li>
@@ -26,11 +38,31 @@
 
         <section id="projects">
             <h1>These are some of my projects</h1>
-            <div class="project">
-                <a href="">
-                    <img src="" alt="" class="project-img" />
-                    <div class="project-title"></div>
-                </a>
+            <div class="all-projects">
+                <div class="project">
+                    <a href="">
+                        <img src="img/no-image.jpg" alt="" class="project-img" />
+                        <div class="project-title">Meu Projeto</div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="">
+                        <img src="img/no-image.jpg" alt="" class="project-img" />
+                        <div class="project-title">Meu Projeto</div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="">
+                        <img src="img/no-image.jpg" alt="" class="project-img" />
+                        <div class="project-title">Meu Projeto</div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="">
+                        <img src="img/no-image.jpg" alt="" class="project-img" />
+                        <div class="project-title">Meu Projeto</div>
+                    </a>
+                </div>
             </div>
             <div class="show-all">
                 Show All >
@@ -43,31 +75,31 @@
             <div class="links">
                 <div class="link">
                     <a id="profile-link" href="" target="_blank">
-                        <img src="img/" alt="Facebook logo" />
+                        <img src="img/facebook.png" alt="Facebook logo" />
                         Facebook
                     </a>
                 </div>
                 <div class="link">
                     <a href="" target="_blank">
-                        <img src="img/" alt="GitHub logo" />
+                        <img src="img/github.png" alt="GitHub logo" />
                         GitHub
                     </a>
                 </div>
                 <div class="link">
                     <a href="" target="_blank">
-                        <img src="img/" alt="Twitter logo" />
+                        <img src="img/twitter.png" alt="Twitter logo" />
                         Twitter
                     </a>
                 </div>
                 <div class="link">
                     <a href="" target="_blank">
-                        <img src="img/" alt="At symbol" />
+                        <img src="img/at.png" alt="At symbol" />
                         Send a mail
                     </a>
                 </div>
                 <div class="link">
                     <a href="" target="_blank">
-                        <img src="img/" alt="Cell phone" />
+                        <img src="img/phone.png" alt="Cell phone" />
                         Call me
                     </a>
                 </div>
