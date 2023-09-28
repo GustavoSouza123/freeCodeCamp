@@ -72,6 +72,7 @@ h1, p {
     display: flex;
     align-items: center;
     height: 40px;
+    margin-left: 20px;
 }
 
 #nav-bar ul {
