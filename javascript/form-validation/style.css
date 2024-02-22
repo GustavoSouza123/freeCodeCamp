@@ -31,7 +31,6 @@ h1,
     margin: 20px auto;
 }
 
-label,
 legend {
     font-weight: bold;
 }
@@ -39,6 +38,31 @@ legend {
 .input-container {
     display: flex;
     flex-direction: column;
+}
+
+.input-container .entry {
+    display: flex;
+}
+
+.input-container .entry > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container .entry > div:first-child {
+    width: 70%;
+}
+
+.input-container .entry > div:last-child {
+    width: 30%;
+}
+
+.input-container .entry .entry-name {
+    padding-right: 20px;
+}
+
+label {
+    font-size: 16px;
 }
 
 button {

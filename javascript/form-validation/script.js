@@ -18,15 +18,20 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-
 function addEntry() {
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
     const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
     const HTMLString = `
-    <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
-    <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name" />
-    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
-    <input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories" />
+    <div class="entry">
+        <div class="entry-name">
+            <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+            <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name" />
+        </div>
+        <div class="entry-calories">
+            <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+            <input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories" />
+        </div>
+    </div>
     `;
     targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
@@ -45,7 +50,6 @@ function getCaloriesFromInputs(list) {
     }
     return calories;
 }
-
 
 function calculateCalories(e) {
     e.preventDefault();
@@ -72,8 +76,28 @@ function calculateCalories(e) {
     const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
     const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 
-    output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}"></span>`;
+    output.innerHTML = `
+    <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
+    <hr>
+    <p>${budgetCalories} Calories Budgeted</p>
+    <p>${consumedCalories} Calories Consumed</p>
+    <p>${exerciseCalories} Calories Burned</p>
+    `;
+
+    output.classList.remove('hide');
+}
+
+function clearForm() {
+    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+    for(const container of inputContainers) {
+        container.innerHTML = '';
+    }
+    budgetNumberInput.value = '';
+    output.innerText = '';
+    output.classList.add('hide');
 }
 
 
 addEntryButton.addEventListener('click', addEntry);
+calorieCounter.addEventListener('submit', calculateCalories);
+clearButton.addEventListener('click', clearForm);
