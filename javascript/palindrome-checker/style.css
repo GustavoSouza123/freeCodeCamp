@@ -79,17 +79,15 @@ label {
     text-align: center;
 }
 
-.user-input {
-    font-size: 1.4rem;
-    margin-top: 10px;
-    text-align: center;
-}
-
 .results-div {
     overflow-y: auto;
     word-wrap: break-word;
-    min-height: 50px;
+    min-height: 40px;
     color: black;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .hidden {
