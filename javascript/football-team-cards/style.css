@@ -59,6 +59,6 @@ footer {
 
 @media (max-width: 768px) {
     .team-stats {
-    flex-direction: column;
+        flex-direction: column;
     }
 }
