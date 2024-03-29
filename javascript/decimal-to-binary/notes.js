@@ -3,7 +3,7 @@
 
 // first
 
-const decimalToBinary = (input) => {
+const decimalToBinary1 = (input) => {
     const inputs = [];
     const quotients = [];
     const remainders = [];
@@ -33,7 +33,7 @@ const decimalToBinary = (input) => {
 
 // second
 
-const decimalToBinary = (input) => {
+const decimalToBinary2 = (input) => {
     let binary = '';
 
     if(input === 0) {
@@ -47,3 +47,39 @@ const decimalToBinary = (input) => {
 
     result.innerText = binary;
 }
+
+
+// call stack example
+
+const callStack = [];
+
+const a = () => {
+  return "freeCodeCamp " + b();
+};
+
+const b = () => {
+  return "is " + c();
+};
+
+const c = () => {
+  return "awesome!";
+};
+
+console.log(a());
+
+
+// recursive function
+
+const countDownAndUp = (number) => {
+    console.log(number);
+
+    if(number === 0) {
+        console.log('Reached base case');
+        return;
+    } else {
+        countDownAndUp(number - 1);
+        console.log('Number', number);
+    }
+}
+
+countDownAndUp(3);
