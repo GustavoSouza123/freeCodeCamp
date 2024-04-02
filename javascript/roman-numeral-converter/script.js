@@ -25,10 +25,10 @@ const convertToRoman = num => {
             res.push(arr[0]);
             num -= arr[1];
         }
-    });
+    })
 
     return res.join('');
-};
+}
 
 const isValid = (str, int) => {
     let errText = '';
@@ -49,21 +49,12 @@ const isValid = (str, int) => {
     output.classList.add('alert');
 
     return false;
-};
+}
 
 const clearOutput = () => {
     output.innerText = '';
     output.classList.remove('alert');
-};
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    updateUI();
-});
-
-convertButton.addEventListener('click', () => {
-    updateUI();
-});
+}
 
 const updateUI = () => {
     const numStr = document.getElementById('number').value;
@@ -76,4 +67,13 @@ const updateUI = () => {
     if(isValid(numStr, int)) {
         output.innerText = convertToRoman(int);
     }
-};
+}
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    updateUI();
+})
+
+convertButton.addEventListener('click', () => {
+    updateUI();
+})
