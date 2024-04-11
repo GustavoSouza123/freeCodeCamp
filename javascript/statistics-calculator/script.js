@@ -27,6 +27,8 @@ const getMode = array => {
 const getRange = array => Math.max(...array) - Math.min(...array);
 
 
+
+
 const calculate = () => {
     const value = document.querySelector('#numbers').value;
     const array = value.split(/,\s*/g);

@@ -3,6 +3,8 @@ body {
     background-color: rgb(27, 27, 50);
     text-align: center;
     color: #fff;
+    font-size: 18px;
+    padding: 30px;
 }
 
 button {
