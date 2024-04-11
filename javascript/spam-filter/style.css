@@ -19,9 +19,6 @@
 body {
     background-color: var(--dark-grey);
     color: var(--light-grey);
-}
-
-body {
     text-align: center;
 }
 
