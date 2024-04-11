@@ -21,13 +21,13 @@ body {
     color: var(--light-grey);
 }
 
-body,
-#message-input:placeholder-shown {
+body {
     text-align: center;
 }
 
 textarea {
     max-width: 90%;
+    padding: 10px;
 }
 
 .main-text {
