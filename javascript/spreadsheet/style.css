@@ -1,12 +1,32 @@
 #container {
     display: grid;
-    grid-template-columns: 50px repeat(10, 200px);
+    grid-template-columns: 50px repeat(10, 120px);
     grid-template-rows: repeat(11, 30px);
 }
 
 .label {
-    background-color: lightgray;
+    background-color: #eaeaea;
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+input:not([id^="J"]) {
+    border-right: none;
+}
+
+input:not([id$="99"]) {
+    border-bottom: none;
+}
+
+input:focus {
+    border: 2px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
