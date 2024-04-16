@@ -21,7 +21,7 @@ input:not([id^="J"]) {
     border-right: none;
 }
 
-input:not([id$="99"]) {
+input:not([id$="30"]) {
     border-bottom: none;
 }
 
@@ -29,4 +29,12 @@ input:focus {
     border: 2px solid #ccc;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+}
+
+input[id^="J"]:focus {
+    border-right: 2px solid #ccc;
+}
+
+input[id$="30"]:focus {
+    border-bottom: 2px solid #ccc;
 }
