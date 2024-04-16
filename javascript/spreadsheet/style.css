@@ -1,3 +1,7 @@
+:root {
+    --input: #ccc;
+}
+
 #container {
     display: grid;
     grid-template-columns: 50px repeat(10, 120px);
@@ -14,7 +18,7 @@
 input {
     border: none;
     outline: none;
-    border: 1px solid #ccc;
+    border: 1px solid var(--input);
 }
 
 input:not([id^="J"]) {
@@ -26,15 +30,15 @@ input:not([id$="30"]) {
 }
 
 input:focus {
-    border: 2px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border: 2px solid var(--input);
+    border-right: 1px solid var(--input);
+    border-bottom: 1px solid var(--input);
 }
 
 input[id^="J"]:focus {
-    border-right: 2px solid #ccc;
+    border-right: 2px solid var(--input);
 }
 
 input[id$="30"]:focus {
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid var(--input);
 }
