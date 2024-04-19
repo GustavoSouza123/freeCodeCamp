@@ -27,6 +27,7 @@ const median = nums => {
 }
 
 const spreadsheetFunctions = {
+    '': num => num,
     sum,
     average,
     median,
@@ -35,7 +36,12 @@ const spreadsheetFunctions = {
     firsttwo: nums => nums.slice(0, 2),
     lasttwo: nums => nums.slice(-2),
     has2: nums => nums.includes(2),
-    increment: nums => nums.map(num => num + 1)
+    increment: nums => nums.map(num => num + 1),
+    someeven: nums => nums.some(isEven),
+    everyeven: nums => nums.every(isEven),
+    random: ([min, max]) => Math.floor(Math.random() * (max - min + 1)) + min,
+    range: nums => range(...nums),
+    nodupes: nums => nums.filter((num, index) => nums.indexOf(num) === index)
 }
 
 const applyFunction = str => {
